@@ -1,67 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Staudt István - Portfólió</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="fejlec">
-        <h1>Staudt István</h1>
-        <h2>Junior webfejlesztő</h2>
-    </header>
-    <nav class="navbar">
-        <h1>Bemutatkozás</h1>
-        <h1>Készségek</h1>
-        <h1>Projektek</h1>
-        <h1>Kapcsolat</h1>
-    </nav>
-    <main>
-        <section>
-            <h1>Bemutatkozás</h1>
-            <p>Hello, Staudt István vagyok, 18 éves, 12. Osztályos és junior webfejlesztő</p>
-        </section>
+    <div class="site-container">
+        <header class="fejlec">
+            <h1>Staudt István</h1>
+            <h2>Junior Webfejlesztő</h2>
+        </header>
 
-        <section>
-            <h1>Készségeim</h1>
-            <img src="img/HTML logo.png" alt="">
-            <img src="img/CSS Logo.png" alt="">
-            <img src="img/JS Logo.png" alt="">
-            <img src="img/Python Logo.png" alt="">
-            <img src="img/SQL Logo.png" alt="">
-            <img src="img/Git Logo.png" alt="">
-        </section>
+        <nav class="navbar">
+            <a href="#bemutatkozas">Bemutatkozás</a>
+            <a href="#keszsegek">Készségek</a>
+            <a href="#projektek">Projektek</a>
+            <a href="#kapcsolat">Kapcsolat</a>
+        </nav>
 
-        <section class="projektSection">
-            <h1>Projektek</h1>
-            <div>
-                <h2>Wolt</h2>
-                <p>A Woltnál a projektem az hogy az ételek rendelésének árjait újra írjam és szépítsek a dizájnon.</p>
-                <img src="img/Wolt.png" alt="">
-            </div>
-            <div>
-                <h2>Aliexpress</h2>
-                <p>Az Aliexpressnél is lényegében a ruha árait módosítom és új képeket rakok be amikor egy másik ruhát akarnak felrakatni a weboldalra.</p>
-                <img src="img/Aliexpress.png" alt="">
-            </div>
-            <div>
-                <h2>Konzolvilág</h2>
-                <p>A Konzolvilágnál annyit csinálok, hogy amikor a játék 1 hónap múlva megjelenik, azt felrakjam a weboldalra előrendelésként és rakjak oda is képet meg különböző platformok nevét is rakjam a neve felé mint pl. Switch.</p>
-                <img src="img/Konzolvilag.png" alt="">
-            </div>
-        </section>
+        <main>
+            <section id="bemutatkozas" class="bemutatkozas-section">
+                <h2>Bemutatkozás:</h2>
+                <div class="bemutatkozas-tartalom">
+                    <p>Hello, Staudt István vagyok, 18 éves, 12. Osztályos és junior webfejlesztő.</p>
+                    <img src="img/En.png" alt="Staudt István portré" class="profil-kep">
+                </div>
+            </section>
 
-        <section>
-            <h1>Kapcsolatok:</h1>
-            <p><b>E-mail cím:</b> staudtistvan@turr.hu</p>
-            <p><b>Telefonszám:</b> +36 30 123 4567</p>
-            <p><b>Lakhely:</b> Kunbaja</p>
-        </section>
-    </main>
-    <footer class="lablec">
-        <h1>© 2026 Staudt István</h1>
-        <h2>Szoftverfejlesztő és tesztelő</h2>
-    </footer>
+            <section id="keszsegek" class="keszsegek-section">
+                <h2>Készségeim</h2>
+                <div class="keszseg-grid">
+                    
+                        <img src="img/HTML logo.png" alt="HTML">
+
+                        <img src="img/CSS Logo.png" alt="CSS">
+
+                        <img src="img/JS Logo.png" alt="JavaScript">
+
+                        <img src="img/Python Logo.png" alt="Python">
+
+                        <img src="img/SQL Logo.png" alt="SQL">
+
+                        <img src="img/Git Logo.png" alt="Git">
+
+                </div>
+            </section>
+
+            <section id="projektek" class="projekt-section">
+                <h2>Projektek</h2>
+                <div class="projekt-container">
+                    <div class="projekt-kartya">
+                        <h3>Wolt</h3>
+                        <p>A Woltnál a projektem az hogy az ételek rendelésének árjait újra írjam és szépítsek a dizájnon.</p>
+                        <img src="img/Wolt.png" alt="Wolt">
+                    </div>
+                    <div class="projekt-kartya">
+                        <h3>Aliexpress</h3>
+                        <p>Az Aliexpressnél is lényegében a ruha árait módosítom és új képeket rakok be amikor egy másik ruhát akarnak felrakatni a weboldalra.</p>
+                        <img src="img/Aliexpress.png" alt="Aliexpress">
+                    </div>
+                    <div class="projekt-kartya">
+                        <h3>Konzolvilág</h3>
+                        <p>A Konzolvilágnál annyit csinálok, hogy amikor a játék 1 hónap múlva megjelenik, azt felrakjam a weboldalra előrendelésként és rakjak oda is képet meg különböző platformok nevét is rakjam a neve felé mint pl. Switch.</p>
+                        <img src="img/Konzolvilag.png" alt="Konzolvilág">
+                    </div>
+                </div>
+            </section>
+
+            <section id="kapcsolat" class="kapcsolat-section">
+                <h2>Kapcsolatok:</h2>
+                <p><b>E-mail cím:</b> staudtistvan@turr.hu</p>
+                <p><b>Telefonszám:</b> +36 30 123 4567</p>
+                <p><b>Lakhely:</b> Kunbaja</p>
+            </section>
+        </main>
+
+        <footer class="lablec">
+            <h1>© 2026 Staudt István</h1>
+            <h2>Szoftverfejlesztő és tesztelő</h2>
+        </footer>
+    </div>
 </body>
 </html>

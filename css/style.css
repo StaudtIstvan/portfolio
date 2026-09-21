@@ -1,20 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
 
+.site-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 166, 0);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 1);
+}
 
-.fejlec{
+.fejlec {
     text-align: center;
     border: 10px solid black;
     background-color: red;
+    color: black;
+    padding: 25px;
 }
 
-.lablec{
-    text-align: center;
-    border: 10px black solid;
-    background-color: red;
+.fejlec h1 {
+    margin: 0;
+    font-size: 50px;
 }
 
-.navbar{
-    text-align: center;
+.fejlec h2 {
+    margin: 10px 0 0 0;
+    font-size: 30px;
+}
+
+.navbar {
     border: 10px solid black;
+    border-top: none;
     background-color: yellow;
-    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: yellow;
+}
+
+section {
+    padding: 40px 35px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.bemutatkozas-section h2{
+    font-size: 50px;
+}
+
+.bemutatkozas-tartalom {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+
+.profil-kep {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    border: 10px solid black;
+    border-radius: 12px;
+    box-shadow:  10px 10px 0 5px rgba(0, 0, 0, 0.50);
+}
+
+.keszsegek-section h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.keszseg-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+    align-items: center;
+}
+
+.keszseg-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+}
+
+.projekt-section h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.projekt-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.projekt-kartya {
+    background-color: white;
+    border: 10px solid black;
+    border-radius: 30px;
+    padding: 15px 15px;
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:  10px 10px 0 5px rgba(0, 0, 0, 0.50);
+    transition: transform 0.5s;
+}
+
+.projekt-kartya:hover {
+    transform: translateY(-20px);
+}
+
+.projekt-kartya h3 {
+    margin-top: 0;
+    font-size: 50px;
+}
+
+.projekt-kartya p {
+    font-size: 30px;
+    text-align: left;
+}
+
+.projekt-kartya img {
+    width: 200px;
+    margin: 15px auto 0 auto;
+}
+
+.kapcsolat-section h2 {
+    font-size: 50px;
+    margin: 12px 0;
+}
+
+.kapcsolat-section p {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.lablec {
+    text-align: center;
+    border: 10px solid black;
+    background-color: red;
+    color: black;
+    padding: 25px;
+}
+
+.lablec h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.lablec h2 {
+    margin: 5px 0 0 0;
+    font-size: 30px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .bemutatkozas-section h2{
+        text-align: center;
+    }
+
+    .bemutatkozas-tartalom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profil-kep {
+        width: 300px;
+        height: 500px;
+    }
+
+    .projekt-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projekt-kartya {
+        max-width: 400px;
+    }
 }
